@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151414"
+    android:paddingBottom="8dp"
+    android:layout_centerInParent="true"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/imgCrop"
+        android:layout_width="@dimen/editor_size"
+        android:layout_height="@dimen/editor_size"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="8dp"
+        app:srcCompat="@drawable/ic_crop_black"
+        app:layout_constraintEnd_toStartOf="@+id/imgRotateLeft"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Kırp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imgCrop"
+        app:layout_constraintStart_toStartOf="@+id/imgCrop"
+        app:layout_constraintTop_toBottomOf="@+id/imgCrop" />
+
+ <!--ROTATE Right İçin koyabilirsin image'i drawableda var!-->
+    <!--<ImageView-->
+        <!--android:id="@+id/imgRotateRight"-->
+        <!--android:layout_width="@dimen/editor_size"-->
+        <!--android:layout_height="@dimen/editor_size"-->
+        <!--android:layout_margin="4dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--app:srcCompat="@drawable/ic_rotate_left"-->
+        <!--app:layout_constraintEnd_toEndOf="@id/imgText"-->
+        <!--app:layout_constraintHorizontal_bias="0.5"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/imgPencil"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:text="Text"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--app:layout_constraintEnd_toEndOf="@+id/imgRotateRight"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/imgRotateRight"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/imgRotateRight"/>-->
+        <!---->
+    <!---->
+    <ImageView
+        android:id="@+id/imgRotateLeft"
+        android:layout_width="@dimen/editor_size"
+        android:layout_height="@dimen/editor_size"
+        android:layout_margin="4dp"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/ic_rotate_left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgCrop"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Text"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imgRotateLeft"
+        app:layout_constraintStart_toStartOf="@+id/imgRotateLeft"
+        app:layout_constraintTop_toBottomOf="@+id/imgRotateLeft" />
+
+
+</android.support.constraint.ConstraintLayout>

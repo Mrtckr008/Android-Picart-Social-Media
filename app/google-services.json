@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "202670994292",
+    "firebase_url": "https://picart-32435.firebaseio.com",
+    "project_id": "picart-32435",
+    "storage_bucket": "picart-32435.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202670994292:android:51de7bcd94db23ce",
+        "android_client_info": {
+          "package_name": "apps.picart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202670994292-75e4bgdremhn8apv7qdo7pqvusd8dd13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkrQ-DgcJqbw38Dx0517So0kxT7_5rR8M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

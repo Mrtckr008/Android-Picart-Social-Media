@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FiltersActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="info.androidhive.imagefilters.MainActivity"
+        tools:showIn="@layout/activity_main">
+
+        <ja.burhanrashid52.photoeditor.PhotoEditorView
+            android:id="@+id/image_preview"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"
+            app:src="@drawable/got" />
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/image_preview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="360dp"-->
+            <!--android:scaleType="centerCrop" />-->
+
+    <ImageButton
+        android:id="@+id/btn_clearall"
+        android:background="@drawable/rounded_border_tv"
+        android:src="@drawable/ic_clearall"
+        android:layout_below="@+id/image_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_above="@+id/viewpager"
+            android:layout_marginLeft="4dp"
+
+            android:layout_alignParentLeft="true"
+            android:id="@+id/imgUndo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_border_tv"
+            android:padding="8dp"
+            android:layout_below="@+id/image_preview"
+            app:srcCompat="@drawable/ic_undo"
+            app:layout_constraintEnd_toStartOf="@+id/imgRedo"
+            />
+
+        <ImageButton
+            android:layout_above="@+id/viewpager"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/imgUndo"
+            android:layout_below="@+id/image_preview"
+            android:id="@+id/imgRedo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_border_tv"
+            android:padding="8dp"
+            app:srcCompat="@drawable/ic_redo"
+            android:layout_toEndOf="@id/imgUndo" />
+
+        <apps.picart.utils.NonSwipeableViewPager
+            android:layout_below="@id/btn_clearall"
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_above="@+id/tabs"
+            android:background="@android:color/black"
+            android:layout_centerVertical="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:tabGravity="fill"
+            app:tabMode="fixed" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

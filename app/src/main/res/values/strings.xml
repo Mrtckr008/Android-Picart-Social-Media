@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">PicArt</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="activity_title_main">Editor</string>
+    <string name="action_settings">Settings</string>
+    <string name="filters">Efektler</string>
+    <string name="edit">Tonlama</string>
+
+    <string name="lbl_brightness">Parlaklık</string>
+    <string name="lbl_contrast">Kontrast</string>
+    <string name="lbl_saturation">Saturasyon</string>
+    <string name="tab_filters">Efektler</string>
+    <string name="tab_edit">Tonlama</string>
+
+    <string name="label_brush">Boyama</string>
+    <string name="label_emoji">Emoji</string>
+    <string name="label_sticker">Sticker</string>
+    <string name="label_eraser">Sil</string>
+    <string name="label_text">Text</string>
+
+
+    <string name="roboto_medium">sans-serif-medium</string>
+    <string name="filter_normal">Normal</string>
+    <string name="action_save">SAVE</string>
+    <string name="action_open">OPEN</string>
+
+    <string name="action_sign_in_short">Kayıt Ol !</string>
+    <string name="auth_failed">Kullanıcı adı veya sifre hatalı, lütfen tekrar deneyiniz..</string>
+    <string name="btn_forgot_password">Sifremi Unuttum !</string>
+    <string name="btn_link_to_login">Giriş Yap !</string>
+    <string name="btn_link_to_register">Üye değil misin? Üye olmak için Tıkla !</string>
+    <string name="btn_login">Giriş Yap !</string>
+    <string name="btn_remove">Sil</string>
+    <string name="btn_reset_password">Sifremi Sıfırla</string>
+    <string name="btn_send">Gönder </string>
+    <string name="btn_sign_out">Cıkıs Yap</string>
+    <string name="change_email">Mail Adresini Degistir</string>
+    <string name="change_password">Sifremi Degistir</string>
+    <string name="email">Email Adresini Gir !</string>
+    <string name="forgot_password_msg">Uygulamaya Kayıtlı Mail Adresini Gir, Sifre Sıfırlama Linki Mail Adresine Gönderilecektir.</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_name">Adım</string>
+    <string name="hint_new_email">Yeni Mail Adresini Gir !</string>
+    <string name="hint_password"> Sifreni Gir !</string>
+    <string name="lbl_forgot_password">Sifremi Unuttum !</string>
+    <string name="minimum_password">Sifreniz En Az 6 Karakterden Oluşmalı!</string>
+    <string name="new_pass">Yeni Sifreni Gir !</string>
+    <string name="remove_user">Hesabımı Sil</string>
+    <string name="send_password_reset_email">Sifremi Sıfırla</string>
+    <string name="title_activity_login">Kayıt Ol !</string>
+    <string name="btn_change">Güncelle</string>
+    <string name="btn_back"><![CDATA[<< Geri]]></string>
+    <string name="hakkinda_tanim">Tanım</string>
+
+
+
+    <style name="EditText">
+        <item name="android:singleLine">true</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
+

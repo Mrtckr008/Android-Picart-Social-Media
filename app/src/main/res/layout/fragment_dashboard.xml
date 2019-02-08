@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="9"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_weight="1.05"
+        android:id="@+id/appbarlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+
+            android:background="@android:color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:layout_gravity="center"
+                android:id="@+id/tv_headersettings"
+                android:textColor="@android:color/white"
+                android:textStyle="italic"
+                android:textSize="30sp"
+                android:text="Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_weight="0.05"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+<LinearLayout
+    android:background="@color/black"
+    android:layout_weight="4.4"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <ImageView
+        android:id="@+id/img_userpp"
+        android:background="@android:color/transparent"
+        android:layout_width="200dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.8"
+        android:padding="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+            <TextView
+                 android:textColor="@color/black"
+                 android:textSize="15sp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Kullanıcı Adı: "
+            />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:textStyle="italic|bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Berdil İlyada"
+            />
+        <!--<Button-->
+            <!--android:id="@+id/btn_setusername"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:background="@android:color/holo_orange_light"-->
+            <!--android:text="Düzenle"-->
+            <!--/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.8"
+        android:padding="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Mail: "
+            />
+
+        <TextView
+            android:id="@+id/tv_usermail"
+            android:textStyle="italic|bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" vitallyrh@gmail.com"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.8"
+        android:padding="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sifre: "
+            />
+
+        <TextView
+            android:textStyle="italic|bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="**********"
+            />
+        <Button
+            android:id="@+id/btn_setuserpsw"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@android:color/holo_orange_light"
+            android:text="Sifremi Sıfırla"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.6"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|bottom"
+            android:visibility="gone" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold|italic"
+            android:text="Mailini Kontrol Et!"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    android:layout_alignParentTop="true"
+    android:id="@+id/appbarlayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <LinearLayout
+        android:background="@android:color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/toolbar_title_profil"
+            android:textColor="@android:color/white"
+            android:textStyle="italic"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:text="My Profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+  >
+
+
+
+    <LinearLayout
+        android:paddingTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        android:weightSum="5"
+>
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/black"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/user_pp"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@android:color/transparent"/>
+
+            <android.support.design.widget.FloatingActionButton
+
+                android:layout_alignBottom="@id/user_pp"
+                android:layout_alignEnd="@id/user_pp"
+                android:id="@+id/user_changepp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="center"
+                app:backgroundTint="@android:color/white"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_addimage"
+                android:layout_alignRight="@id/user_pp" />
+            </RelativeLayout>
+            <TextView
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textStyle="italic|bold"
+                android:layout_below="@id/user_changepp"
+                android:layout_centerInParent="true"
+                android:id="@+id/user_name"
+                android:text="Berdil İlyada Karaçam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/white"
+                android:textStyle="italic|bold"
+                android:id="@+id/postsnumber"
+                android:layout_below="@id/user_name"
+                android:layout_centerInParent="true"
+                android:text="Gönderi Sayısı: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:textStyle="italic|bold"
+                android:layout_toRightOf="@id/postsnumber"
+                android:layout_below="@id/user_name"
+                android:layout_centerInParent="true"
+                android:id="@+id/user_countofposts"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_weight="2"
+            android:id="@+id/mypostlist"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.AppBarLayout>

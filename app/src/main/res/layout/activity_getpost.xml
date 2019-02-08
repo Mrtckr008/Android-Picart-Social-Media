@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7.3"
+    android:background="@color/white"
+    tools:context=".GetPostActivity">
+
+<LinearLayout
+    android:paddingTop="5dp"
+    android:orientation="horizontal"
+    android:layout_weight="0.5"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <ImageButton
+
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:id="@+id/btn_getpostback"
+        android:src="@drawable/ic_btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_getposttitle"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        android:text="PicArt"
+
+        />
+</LinearLayout>
+
+
+    <ScrollView
+        android:fitsSystemWindows="true"
+        android:fillViewport="true"
+        android:layout_weight="6.8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    <LinearLayout
+        android:weightSum="6.8"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img_getpostimg"
+        android:src="@mipmap/ic_mainic"
+        android:layout_gravity="center"
+        android:layout_weight="3.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="1dp"
+        />
+    <LinearLayout
+        android:weightSum="5"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:layout_weight="0.6"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/img_getpostgonderenpp"
+            android:src="@drawable/ic_person"
+            android:background="@android:color/black"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+           />
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:background="#ECEFF1"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        <TextView
+
+            android:gravity="center_vertical"
+            android:text=" Berdil İlyada Karacam"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/black"
+            android:id="@+id/tv_gonderennick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:text="   Berdil İlyada Karacam"
+                android:textStyle="bold|italic"
+                android:id="@+id/tv_gonderenmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ECEFF1"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+<ImageButton
+    android:id="@+id/add_fav"
+    android:background="@android:color/transparent"
+    app:srcCompat="@drawable/ic_nofav"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_weight="0.4"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:text="Başlık: "
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:text="YORULDUM!"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/black"
+            android:layout_weight="0.5"
+        android:layout_gravity="center"
+        android:id="@+id/tv_getpostitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_weight="0.4"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:text="İçerik : "
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:text="YORULDUM!"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/black"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:id="@+id/tv_getpostdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="5"
+        android:layout_weight="1.9"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/btn_pushcomment"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_comment_black"
+            android:layout_height="0dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_weight="4"
+            android:id="@+id/list_comments"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
